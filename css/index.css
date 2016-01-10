@@ -1,0 +1,45 @@
+@charset "utf-8";
+body{
+	overflow: hidden;
+	position: relative;
+}
+
+.box-wrap{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: -800px -3000px;
+	width: 6000px;
+	height: 1600px;
+}
+
+.box-row:nth-child(even){
+	margin-left: -140px;
+}
+
+.hexagon{
+	position: relative;
+	width: 80.83px; 
+	height: 140px;
+	background-color: #e6e6e6;
+	margin: -30px 100px;
+	float: left;
+	opacity: .8;
+}
+.hexagon:before,
+.hexagon:after {
+	content: "";
+	position: absolute;
+	width: 0;
+	border-top: 70px solid transparent;
+	border-bottom: 70px solid transparent;
+}
+.hexagon:before {
+	left: 100%;
+	border-left: 40.41px solid #e6e6e6;
+}
+.hexagon:after {
+	right: 100%;
+	width: 0;
+	border-right: 40.41px solid #e6e6e6;
+}
