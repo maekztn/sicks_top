@@ -25,6 +25,13 @@ $(function(){
 	$('.hexagon').on('click', function(){
 		box_rotate($(this));
 	})
+
+
+
+	//nav-btnにactive追加
+	$('.nav-btn').on('click',function(){
+        $('.nav-btn,.side-menu').toggleClass('active');
+    });
 });
 
 function timer(){
@@ -43,7 +50,7 @@ function random_twincle(){
 	$('.'+num).not(':animated').animate({
 		'opacity': 0.3
 	}, 100).delay(100).animate({
-		'opacity': 1
+		'opacity': 0.8
 	}, 100);
 }
 
