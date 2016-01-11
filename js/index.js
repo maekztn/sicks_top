@@ -1,3 +1,14 @@
+$.cssHooks["rotate"] = {
+	get: function( elem, computed, extra ) {
+		return $(elem).data("rotate")
+	},
+	set: function( elem, value ) {
+		var val = $.isNumeric(value)?value+"deg":value; 
+		$(elem).data("rotate",val).css("transform","rotate("+val+")");
+	}
+};
+
+
 $(function(){
 	if(!navigator.userAgent.match(/(iPhone|iPad|Android)/)){
 		//20*20個の六角形を生成
@@ -12,13 +23,6 @@ $(function(){
 			}
 			$('.box-wrap').append(row);
 		}
-		$('.box1110').append('<img src="./images/logo.png" alt="sicks">');
-
-		$('.box0910').addClass('hexMember').append('<div class="texture">').append('<div class="member-txt"><h2 class="member-txt-genre">ART & DESIGN</h2><p class="member-txt-name">HIKARI<br>TANIMOTO</p></div>');
-		$('.texture').append($('<div>').addClass('hexTop')).append($('<div>').addClass('hexBottom'));
-		$('.box0910').append('<div class="color">');
-		$('.color').append($('<div>').addClass('hexTop')).append($('<div>').addClass('hexBottom'));
-
 		//bodyのheightを設定
 		$(window).on('load resize', function(){
 			if($(window).height() < 460){
@@ -27,9 +31,18 @@ $(function(){
 				$('body').height($(window).height());
 			}
 		});
+		//チカチカ光るやつ起動
+		twincle_timer();
+		rotate_timer();
+
+		//要素追加　あとで変える
+		$('.box1110').addClass('logo').append('<img src="./images/logo.png" alt="sicks">');
+		$('.box0910').addClass('hexMember btn').append('<div class="texture">').append('<div class="member-txt"><h2 class="member-txt-genre">ART & DESIGN</h2><p class="member-txt-name">HIKARI<br>TANIMOTO</p></div>');
+		$('.texture').append($('<div>').addClass('hexTop')).append($('<div>').addClass('hexBottom'));
+		$('.box0910').append('<div class="color">');
+		$('.color').append($('<div>').addClass('hexTop')).append($('<div>').addClass('hexBottom'));
 	}
 
-	//timer();
 
 	$('.hexagon').on('click', function(){
 		box_rotate($(this));
@@ -42,10 +55,10 @@ $(function(){
     });
 });
 
-function timer(){
+function twincle_timer(){
 	var time = Math.random()*100;
 	random_twincle();
-	setTimeout(timer, time);
+	setTimeout(twincle_timer, time);
 }
 
 function random_twincle(){
@@ -62,10 +75,21 @@ function random_twincle(){
 	}, 100);
 }
 
+function rotate_timer(){
+	var time = Math.random()*100;
+	var num01 = Math.floor(Math.random()*20);
+	if(num01 < 10)num01 = '0' + num01;
+	var num02 = Math.floor(Math.random()*20);
+	if(num02 < 10)num02 = '0' + num02;
+	var num = num01 + num02;
+
+	box_rotate($('.box'+num));
+	setTimeout(rotate_timer, time);
+}
+
 function box_rotate(target){
-	console.log(target);
+	if(target.hasClass('btn'))return false;
 	var rotate = target.css('rotate') + 60;
-	console.log(rotate);
 	target.animate({zIndex:1},{
 		//1秒かけてアニメーション
 		duration: 300,

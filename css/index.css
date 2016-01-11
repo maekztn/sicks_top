@@ -5,6 +5,10 @@ body{
   background: url(../images/bg.png);
 }
 
+.box-wrap-sp{
+  display: none;
+}
+
 .box-wrap{
   position: absolute;
   top: 50%;
@@ -16,6 +20,10 @@ body{
 
 .box-row:nth-child(even){
   margin-left: -140px;
+}
+
+.btn{
+  cursor: pointer;
 }
 
 /* submenuのボタン */
@@ -287,37 +295,6 @@ body{
   pointer-events: none;
 }
 
-/*.hexagon{
-  position: relative;
-  width: 80.83px; 
-  height: 140px;
-  background-color: #e6e6e6;
-  margin: -30px 100px;
-  float: left;
-  opacity: .8;
-}
-.hexagon:before,
-.hexagon:after {
-  content: "";
-  position: absolute;
-  width: 0;
-  border-top: 70px solid transparent;
-  border-bottom: 70px solid transparent;
-}
-.hexagon:before {
-  left: 100%;
-  border-left: 40.41px solid #e6e6e6;
-}
-.hexagon:after {
-  right: 100%;
-  width: 0;
-  border-right: 40.41px solid #e6e6e6;
-}*/
-
-
-
-
-
 .hexagon,
 .texture,
 .color {
@@ -390,15 +367,15 @@ body{
   z-index: 2;
   background: inherit;
 }
-.box1110{
+.logo{
   background: transparent;
   pointer-events: none;
 }
-.box1110:before,
-.box1110:after{
+.logo:before,
+.logo:after{
   border: none;
 }
-.box1110 img{
+.logo img{
   width: 140%;
   position: absolute;
   top: 0;
@@ -494,6 +471,7 @@ body{
     box-sizing: border-box;
   }
   .box-wrap-sp{
+    display: block;
     text-align: center;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -518,6 +496,9 @@ body{
   }
   .hexBottom:after{
     background-position: right 20px center;
+  }
+  .member-txt{
+    opacity: 1;
   }
   .texture{
     margin: 0;
