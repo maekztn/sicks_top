@@ -9,6 +9,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" type="text/css" href="../css/reset.css">
 <link rel="stylesheet" href="../css/index.css">
+<link rel="stylesheet" href="../css/animsition.min.css">
 <link rel="shortcut icon" href="">
 <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
 <script src="../js/index.js"></script>
@@ -21,7 +22,12 @@
 ?>
 </head>
 <body id="privacypolicy">
-
+<div class="loading">
+    <div class="loading-inner">
+        <p class="loading-txt">Loading</p>
+        <div class="loading-img"><img src="../images/loading.gif" alt="ロード中"></div>
+    </div>
+</div>
 <div class="nav-btn">
     <div class="icons_btn">
         <span class="icons_btn1"></span>
@@ -50,7 +56,7 @@
 
 <article class="pp-container">
     <h2 class="pp-ttl">PRIVACY POLICY</h2>
-    <p class="pp-ttl-txt">SICKS（以下，「当社」といいます。）は，本ウェブサイト上で提供するサービス（以下,「本サービス」といいます。）におけるプライバシー情報の取扱いについて，以下のとおりプライバシーポリシー（以下，「本ポリシー」といいます。）を定めます。</p>
+    <p class="pp-ttl-txt">SICKS（以下，「本サイト」といいます。）は，本ウェブサイト上で提供するサービス（以下,「本サービス」といいます。）におけるプライバシー情報の取扱いについて，以下のとおりプライバシーポリシー（以下，「本ポリシー」といいます。）を定めます。</p>
 
     <section class="pp-section">
         <h3 class="pp-section-ttl">第1条（プライバシー情報）</h3>
@@ -145,7 +151,6 @@
 <footer class="footer">
     <p><small>Copyright &copy; sicks All Rights Reserved.</small></p>
 </footer>
-
 
 </body>
 </html>

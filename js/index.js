@@ -1,4 +1,10 @@
 $(function(){
+
+	//loading処理
+	$(window).on("load",function(){
+		$('.loading').delay(600).fadeOut(800);
+	});
+
 	if(!navigator.userAgent.match(/(iPhone|iPad|Android)/)){
 		//20*20個の六角形を生成
 		for(var i=0; i<20; i++){
@@ -29,7 +35,7 @@ $(function(){
 		});
 	}
 
-	//timer();
+	timer();
 
 	$('.hexagon').on('click', function(){
 		box_rotate($(this));
