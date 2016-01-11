@@ -441,6 +441,7 @@ body{
   }
   .box-wrap{
     height: auto;
+    display: none;
   }
   .box-wrap-sp{
     display: block;
