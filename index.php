@@ -61,7 +61,7 @@
             <div class="hexBottom"></div>
             <img src="./images/logo.png" alt="sicks">
         </div>
-        <div class="hexagon">
+        <div class="hexagon cont">
             <div class="hexTop"></div>
             <div class="hexBottom"></div>
             <div class="texture">

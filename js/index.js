@@ -35,18 +35,26 @@ $(function(){
 		twincle_timer();
 		rotate_timer();
 
-		//要素追加　あとで変える
+		//======要素追加　あとで変える======
+		//ロゴ追加
 		$('.box1110').addClass('logo').append('<img src="./images/logo.png" alt="sicks">');
-		$('.box0910').addClass('hexMember btn').append('<div class="texture">').append('<div class="member-txt"><h2 class="member-txt-genre">ART & DESIGN</h2><p class="member-txt-name">HIKARI<br>TANIMOTO</p></div>');
-		$('.texture').append($('<div>').addClass('hexTop')).append($('<div>').addClass('hexBottom'));
-		$('.box0910').append('<div class="color">');
-		$('.color').append($('<div>').addClass('hexTop')).append($('<div>').addClass('hexBottom'));
+
+		var cont_place = ['.box0710', '.box0711', '.box0810', '.box0811', '.box0910', '.box0911', '.box1010', '.box1011', '.box1111', '.box1210', '.box1211']
+
+		$('.box-wrap-sp .cont').each(function(){
+			console.log($(this));
+			var num = Math.floor(Math.random()*cont_place.length);
+
+			//$(cont_place[num]).addClass('hexMember btn').append($(this))
+		});
+
+		// $('.box0910').addClass('hexMember btn').append('<div class="texture">').append('<div class="member-txt"><h2 class="member-txt-genre">ART & DESIGN</h2><p class="member-txt-name">HIKARI<br>TANIMOTO</p></div>');
+		// $('.texture').append($('<div>').addClass('hexTop')).append($('<div>').addClass('hexBottom'));
+		// $('.box0910').append('<div class="color">');
+		// $('.color').append($('<div>').addClass('hexTop')).append($('<div>').addClass('hexBottom'));
+
+		$('.hexagon').on('click', function(){box_rotate($(this));});
 	}
-
-
-	$('.hexagon').on('click', function(){
-		box_rotate($(this));
-	})
 
 
 	//nav-btnにactive追加
