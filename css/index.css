@@ -348,7 +348,11 @@ body{
   left: -100%;
   right: -100%;
 }
-
+/* 指定の位置にbackgroundで画像配置 */
+.box0910{
+  background-image: url(../images/bag.jpg);
+}
+/* 六角形テクスチャスタイル */
 .texture{
   background-image: url(../images/member_bg.png);
   background-size: 4px;
@@ -366,10 +370,7 @@ body{
 .cont0{
   background-image: url(../images/bag.jpg);
 }
-
-=======
 /* 六角形カラースタイル */
->>>>>>> 3d965d2a3a41a2477562256b2197da2701a1a8f7
 .color{
   pointer-events: none;
   background: #FD6A6A;
@@ -437,7 +438,9 @@ body{
 
 
 /* ===================================================================
- Topページレスポンシブ
+
+ レスポンシブ
+
 =================================================================== */
 @media screen and (max-width:768px){
   body{
@@ -549,9 +552,7 @@ body{
 #privacypolicy .footer{
   position: static;
 }
-/* ===================================================================
- privacypolicyページレスポンシブ
-=================================================================== */
+
 @media screen and (max-width:768px){
   .side-menu{
     padding: 0 30px 30px 30px;
