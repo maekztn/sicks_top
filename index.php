@@ -67,13 +67,13 @@
             <div class="hexBottom"></div>
             <img src="./images/logo.png" alt="sicks">
         </div>
-        <div class="hexagon cont">
+        <div class="hexagon cont0 cont">
             <div class="hexTop"></div>
             <div class="hexBottom"></div>
-            <div class="texture">
+            <div class="texture"><a href="#test">
                 <div class="hexTop"></div>
                 <div class="hexBottom"></div>
-            </div>
+            </a></div>
             <div class="color">
                 <div class="hexTop"></div>
             <div class="hexBottom"></div>

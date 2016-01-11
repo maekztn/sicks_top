@@ -26,10 +26,6 @@ body{
   margin-left: -140px;
 }
 
-.btn{
-  cursor: pointer;
-}
-
 /* submenuのボタン */
 .nav-btn {
   position: fixed;
@@ -343,9 +339,6 @@ body{
   left: -100%;
   right: -100%;
 }
-.box0910{
-  background-image: url(../images/bag.jpg);
-}
 .texture{
   background-image: url(../images/member_bg.png);
   background-size: 4px;
@@ -356,10 +349,19 @@ body{
   opacity: .2;
 }
 
+.cont a{
+  display: block;
+  height: 100%;
+}
+.cont0{
+  background-image: url(../images/bag.jpg);
+}
+
 .color{
+  pointer-events: none;
   background: #FD6A6A;
-  margin: -140px 0 0 0;
-  position: relative;
+  margin: 0 0 0 0;
+  position: absolute;
   top:0;
   z-index: 100;
   opacity: 0;
@@ -375,6 +377,7 @@ body{
   opacity: .8;
 }
 .member-txt {
+  pointer-events: none;
   position: absolute;
   z-index: 1000;
   color: #fff;
@@ -451,9 +454,6 @@ body{
   }
   .hexagon:nth-child(odd){  float: left;}
   .hexagon:nth-child(even){  float: right;}
-  .hexagon:nth-child(2){
-    background-image: url(../images/bag.jpg); 
-  }
   .hexTop:after, .hexBottom:after{
     transform: rotate(45deg) scaleX(1.7321) translateY(-37.4145px);
   }
