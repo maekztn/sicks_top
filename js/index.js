@@ -1,31 +1,33 @@
 $(function(){
-	//20*20個の六角形を生成
-	for(var i=0; i<20; i++){
-		if(i<10)i = '0'+i;
-		var row = $('<div>').addClass('box-row clearfix');
-		for(var n=0; n<20; n++){
-			if(n<10)n = '0'+n;
-			var box = $('<div>').addClass('hexagon box'+i+''+n)
-			.append($('<div>').addClass('hexTop')).append($('<div>').addClass('hexBottom'));
-			row.append(box);
+	if(!navigator.userAgent.match(/(iPhone|iPad|Android)/)){
+		//20*20個の六角形を生成
+		for(var i=0; i<20; i++){
+			if(i<10)i = '0'+i;
+			var row = $('<div>').addClass('box-row clearfix');
+			for(var n=0; n<20; n++){
+				if(n<10)n = '0'+n;
+				var box = $('<div>').addClass('hexagon box'+i+''+n)
+				.append($('<div>').addClass('hexTop')).append($('<div>').addClass('hexBottom'));
+				row.append(box);
+			}
+			$('.box-wrap').append(row);
 		}
-		$('.box-wrap').append(row);
+		$('.box1110').append('<img src="./images/logo.png" alt="sicks">');
+
+		$('.box0910').addClass('hexMember').append('<div class="texture">').append('<div class="member-txt"><h2 class="member-txt-genre">ART & DESIGN</h2><p class="member-txt-name">HIKARI<br>TANIMOTO</p></div>');
+		$('.texture').append($('<div>').addClass('hexTop')).append($('<div>').addClass('hexBottom'));
+		$('.box0910').append('<div class="color">');
+		$('.color').append($('<div>').addClass('hexTop')).append($('<div>').addClass('hexBottom'));
+
+		//bodyのheightを設定
+		$(window).on('load resize', function(){
+			if($(window).height() < 460){
+				$('body').height(460);
+			}else{
+				$('body').height($(window).height());
+			}
+		});
 	}
-	$('.box1110').append('<img src="./images/logo.png" alt="sicks">');
-
-	$('.box0910').addClass('hexMember').append('<div class="texture">').append('<div class="member-txt"><h2 class="member-txt-genre">ART & DESIGN</h2><p class="member-txt-name">HIKARI<br>TANIMOTO</p></div>');
-	$('.texture').append($('<div>').addClass('hexTop')).append($('<div>').addClass('hexBottom'));
-	$('.box0910').append('<div class="color">');
-	$('.color').append($('<div>').addClass('hexTop')).append($('<div>').addClass('hexBottom'));
-
-	//bodyのheightを設定
-	$(window).on('load resize', function(){
-		if($(window).height() < 460){
-			$('body').height(460);
-		}else{
-			$('body').height($(window).height());
-		}
-	});
 
 	//timer();
 

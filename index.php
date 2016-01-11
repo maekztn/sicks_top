@@ -16,6 +16,13 @@
 <link rel="shortcut icon" href="">
 <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
 <script src="js/index.js"></script>
+<?php
+  $ua=$_SERVER['HTTP_USER_AGENT'];
+  $browser = ((strpos($ua,'iPhone')!==false)||(strpos($ua,'iPod')!==false)||(strpos($ua,'Android')!==false));
+    if ($browser == true){
+    $browser = 'sp';
+  }
+?>
 </head>
 <body>
 
@@ -28,6 +35,7 @@
 </div>
 <nav class="side-menu">
     <dl class="side-menu-list">
+        <dt><a href="/sicks_top">HOME</a></dt>
         <dt><a href="#">ABOUT</a></dt>
         <dt>SUBJECT</dt>
         <dd><a href="#">All</a></dd>
@@ -40,11 +48,96 @@
         <dd><a href="#">Facebook</a></dd>
         <dd><a href="#">Twitter</a></dd>
         <dd><a href="#">LINE</a></dd>
-        <dt><a href="#">PRIVACY POLICY</a></dt>
+        <dt><a href="./privacypolicy/">PRIVACY POLICY</a></dt>
     </dl>
 </nav>
 
-<div class="box-wrap"></div>
+
+<?php if($browser == 'sp'): ?>
+    <div class="box-wrap-sp">
+        <div class="box-inner-sp">
+            <div class="hexagon box1110">
+                <div class="hexTop"></div>
+                <div class="hexBottom"></div>
+                <img src="./images/logo.png" alt="sicks">
+            </div>
+            <div class="hexagon">
+                <div class="hexTop"></div>
+                <div class="hexBottom"></div>
+                <div class="texture">
+                    <div class="hexTop"></div>
+                    <div class="hexBottom"></div>
+                </div>
+                <div class="color">
+                    <div class="hexTop"></div>
+                <div class="hexBottom"></div>
+                </div>
+            </div>
+            <div class="hexagon">
+                <div class="hexTop"></div>
+                <div class="hexBottom"></div>
+                <div class="texture">
+                    <div class="hexTop"></div>
+                    <div class="hexBottom"></div>
+                </div>
+                <div class="color">
+                    <div class="hexTop"></div>
+                <div class="hexBottom"></div>
+                </div>
+            </div>
+            <div class="hexagon">
+                <div class="hexTop"></div>
+                <div class="hexBottom"></div>
+                <div class="texture">
+                    <div class="hexTop"></div>
+                    <div class="hexBottom"></div>
+                </div>
+                <div class="color">
+                    <div class="hexTop"></div>
+                <div class="hexBottom"></div>
+                </div>
+            </div>
+            <div class="hexagon">
+                <div class="hexTop"></div>
+                <div class="hexBottom"></div>
+                <div class="texture">
+                    <div class="hexTop"></div>
+                    <div class="hexBottom"></div>
+                </div>
+                <div class="color">
+                    <div class="hexTop"></div>
+                <div class="hexBottom"></div>
+                </div>
+            </div>
+            <div class="hexagon">
+                <div class="hexTop"></div>
+                <div class="hexBottom"></div>
+                <div class="texture">
+                    <div class="hexTop"></div>
+                    <div class="hexBottom"></div>
+                </div>
+                <div class="color">
+                    <div class="hexTop"></div>
+                <div class="hexBottom"></div>
+                </div>
+            </div>
+            <div class="hexagon">
+                <div class="hexTop"></div>
+                <div class="hexBottom"></div>
+                <div class="texture">
+                    <div class="hexTop"></div>
+                    <div class="hexBottom"></div>
+                </div>
+                <div class="color">
+                    <div class="hexTop"></div>
+                <div class="hexBottom"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+<?php else: ?>
+    <div class="box-wrap"></div>
+<?php endif; ?> 
 
 <footer class="footer">
     <p><small>Copyright &copy; sicks All Rights Reserved.</small></p>

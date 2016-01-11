@@ -31,7 +31,6 @@ body{
   z-index: 10001;
   transition: all .2s;
   cursor: pointer;
-  
 }
 .nav-btn:before,
 .nav-btn:after {
@@ -256,6 +255,7 @@ body{
   display: inline-block;
   padding: 30px 30px 0 30px;
   transition: all .5s;
+  overflow: scroll;
 }
 .side-menu.active{
   right: 0;
@@ -265,7 +265,7 @@ body{
 }
 .side-menu-list dt{
   font-size: 85%;
-  margin-top: 40px;
+  margin-top: 30px;
   margin-bottom: 5px;
   color: #fff;
 }
@@ -430,10 +430,10 @@ body{
   mix-blend-mode: overlay;
 }
 .hexMember{
-  transition: .3s all;
+  transition: .2s all;
 }
 .hexMember:hover{
-  transform: rotate(420deg);
+  transform: rotate(300deg);
 }
 .hexMember:hover > .color{
   opacity: .8;
@@ -448,7 +448,7 @@ body{
   left: -100%;
   right: -100%;
   width: 110px;
-  height: 65px;
+  height: 64px;
   margin: auto;
   text-shadow: 10px 10px 10px 10px rgba(0,0,0,.6);
   opacity: 0;
@@ -464,10 +464,8 @@ body{
 }
 .hexMember:hover > .member-txt{
   opacity: 1;
-  transform: rotate(-60deg);
+  transform: rotate(60deg);
 }
-
-
 
 
 .footer{
@@ -479,4 +477,120 @@ body{
   font-size: 82%;
   color: #6c6c6c;
   z-index: 10000;
+}
+
+
+
+@media screen and (max-width:768px){
+  body{
+    overflow: inherit;
+  }
+  .side-menu{
+    right: -100%;
+    width: 100%;
+    background: rgba(0,0,0,.85);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  .box-wrap-sp{
+    text-align: center;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-bottom: 90px;
+  }
+  .box-inner-sp{
+    display: inline-block;
+    width: 290px;
+  }
+  .hexagon, .texture, .color{
+    margin: 0 40px -66px 40px;
+    float: none;
+  }
+  .hexagon:nth-child(odd){  float: left;}
+  .hexagon:nth-child(even){  float: right;}
+  .hexagon:nth-child(2){
+    background-image: url(../images/bag.jpg); 
+  }
+  .hexTop:after, .hexBottom:after{
+    transform: rotate(45deg) scaleX(1.7321) translateY(-37.4145px);
+  }
+  .hexBottom:after{
+    background-position: right 20px center;
+  }
+  .texture{
+    margin: 0;
+  }
+  .color{
+    margin: 8px 0 0 0;
+  }
+  .footer{
+    position: static;
+  }
+}
+
+
+
+
+/*
+
+  privacypolisyページ
+
+*/
+#privacypolicy{
+  overflow: visible;
+  font-size: 100%;
+  text-align: justify;
+}
+.pp-container{
+  width: 85%;
+  margin: 40px auto;
+}
+.pp-ttl{
+  font-size: 120%;
+  margin-bottom: 10px;
+}
+.pp-ttl-txt{
+  margin-bottom: 30px;
+}
+.pp-section{
+  background: rgba(255,255,255,.8);
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 20px;
+  margin-bottom: 40px;
+}
+.pp-section-ttl{
+  font-size: 109%;
+  margin-bottom: 10px;
+}
+.pp-section p,
+.pp-section li{
+  font-size: 85%;
+  color: #666;
+}
+.pp-section ul{
+  border: 1px solid #ccc;
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 10px 0 15px 0;
+}
+.pp-section li{
+  font-size: 85%;
+}
+#privacypolicy .footer{
+  position: static;
+}
+
+@media screen and (max-width:768px){
+  .side-menu{
+    padding: 0 30px 30px 30px;
+  }
+  .pp-container{
+    width: 90%;
+  }
 }
