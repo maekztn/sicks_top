@@ -1,4 +1,8 @@
 @charset "utf-8";
+@font-face{
+  font-family: futura;
+  src: url("../fonts/Futura.ttf") format("truetype");
+}
 body{
   overflow: hidden;
   position: relative;
@@ -53,13 +57,11 @@ body{
   left: 100%;
   border-left: 23.09px solid #000;
 }
-
 .nav-btn:after {
   right: 100%;
   width: 0;
   border-right: 23.09px solid #000;
 }
-
 .icons_btn{
   position: absolute;
   right: calc(50% - 11px);
@@ -67,32 +69,6 @@ body{
   width: 18px;
   height: 18px;
 }
-
-/*.icons_btn span{
-  position: absolute;
-  width: 18px;
-  height: 2px;
-  background: rgba(255,255,255,.9);
-  display: inline-block;
-  transition: .5s all;
-}*/
-/*.icons_btn1{
-  top: 0;
-  right: 0;
-}
-.icons_btn2{
-  top: 7px;
-  right: 0;
-}
-.icons_btn3{
-  top: 14px;
-  right: 0;
-}
-
-*/
-
-
-
 .icons_btn,
 .icons_btn span {
   display: inline-block;
@@ -108,15 +84,9 @@ body{
   background-color: #fff;
   transition: .5s all;
 }
-/*.icons_btn span:nth-of-type(1) {
-  top: 0;
-}*/
 .icons_btn span:nth-of-type(2) {
   top: 8px;
 }
-/*.icons_btn span:nth-of-type(3) {
-  bottom: 0;
-}*/
 .icons_btn span:nth-of-type(1) {
   -webkit-animation: menu-bar01 .75s forwards;
   animation: menu-bar01 .75s forwards;
@@ -236,21 +206,9 @@ body{
 .nav-btn.active:before{  border-left: 23.09px solid #fff;}
 .nav-btn.active:after{  border-right: 23.09px solid #fff;}
 .nav-btn.active span{ background: #000;}
-/*.nav-btn.active .icons_btn span{
-  background: rgba(0,0,0,.95);
-}
-.nav-btn.active .icons_btn1{
-  transform: rotate(225deg);
-  top: 6px;
-}
-.nav-btn.active .icons_btn2{
-  opacity: 0;
-  right: -10px;
-}
-.nav-btn.active .icons_btn3{
-  transform: rotate(-225deg);
-  top: 6px;
-}*/
+
+/* nav-btnのhover処理 */
+.nav-btn:hover{ opacity: .8;}
 
 /* side-menu */
 .side-menu{
@@ -265,17 +223,18 @@ body{
   transition: all .5s;
   overflow: scroll;
 }
+.side-menu::-webkit-scrollbar {
+  display: none;
+}
 .side-menu.active{
   right: 0;
-}
-.side-menu-list{
-  height: 100%;
 }
 .side-menu-list dt{
   font-size: 85%;
   margin-top: 30px;
   margin-bottom: 5px;
   color: #fff;
+  font-family: futura;
 }
 .side-menu-list dd{
   font-size: 78%;
@@ -427,9 +386,10 @@ body{
   width: 110px;
   height: 64px;
   margin: auto;
-  text-shadow: 10px 10px 10px 10px rgba(0,0,0,.6);
+  text-shadow: 0px 0px 10px rgba(0,0,0,.8);
   opacity: 0;
   transition: .3s all;
+  font-family: futura;
 }
 .member-txt-genre{
   font-size: 70%;
@@ -507,7 +467,7 @@ body{
     margin: 0;
   }
   .color{
-    margin: 8px 0 0 0;
+    margin: -140px 0 0 0;
   }
   .footer{
     position: static;
@@ -532,11 +492,13 @@ body{
   margin: 40px auto;
 }
 .pp-ttl{
-  font-size: 120%;
+  font-size: 130%;
   margin-bottom: 10px;
+  font-family: futura;
 }
 .pp-ttl-txt{
   margin-bottom: 30px;
+  font-size: 91%;
 }
 .pp-section{
   background: rgba(255,255,255,.8);
@@ -547,8 +509,9 @@ body{
   margin-bottom: 40px;
 }
 .pp-section-ttl{
-  font-size: 109%;
+  font-size: 100%;
   margin-bottom: 10px;
+  font-weight: 600;
 }
 .pp-section p,
 .pp-section li{
@@ -577,4 +540,45 @@ body{
   .pp-container{
     width: 90%;
   }
+}
+
+
+/*
+
+  loading画面
+
+*/
+.loading{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 100000;
+  background: #fff;
+  top: 0;
+  left: 0;
+  font-family: futura;
+}
+.loading-inner{
+  width: 100px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+  height: 80px;
+}
+.loading-txt{
+  color: #666;
+  text-align: center;
+  letter-spacing: .15em;
+  margin-bottom: 5px;
+}
+.loading-img {
+  width: 50px;
+  margin: 0 auto;
+}
+.loading-img img{
+  width: 100%;
+  height: auto;
 }
