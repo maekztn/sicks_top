@@ -5,11 +5,18 @@ $(function(){
 		var row = $('<div>').addClass('box-row clearfix');
 		for(var n=0; n<20; n++){
 			if(n<10)n = '0'+n;
-			var box = $('<div>').addClass('hexagon '+i+''+n);
+			var box = $('<div>').addClass('hexagon box'+i+''+n)
+			.append($('<div>').addClass('hexTop')).append($('<div>').addClass('hexBottom'));
 			row.append(box);
 		}
 		$('.box-wrap').append(row);
 	}
+	$('.box1110').append('<img src="./images/logo.png" alt="sicks">');
+
+	$('.box0910').addClass('hexMember').append('<div class="texture">').append('<div class="member-txt"><h2 class="member-txt-genre">ART & DESIGN</h2><p class="member-txt-name">HIKARI<br>TANIMOTO</p></div>');
+	$('.texture').append($('<div>').addClass('hexTop')).append($('<div>').addClass('hexBottom'));
+	$('.box0910').append('<div class="color">');
+	$('.color').append($('<div>').addClass('hexTop')).append($('<div>').addClass('hexBottom'));
 
 	//bodyのheightを設定
 	$(window).on('load resize', function(){
@@ -20,12 +27,11 @@ $(function(){
 		}
 	});
 
-	timer();
+	//timer();
 
 	$('.hexagon').on('click', function(){
 		box_rotate($(this));
 	})
-
 
 
 	//nav-btnにactive追加
@@ -47,7 +53,7 @@ function random_twincle(){
 	if(num02 < 10)num02 = '0' + num02;
 	var num = num01 + num02;
 
-	$('.'+num).not(':animated').animate({
+	$('.box'+num).not(':animated').animate({
 		'opacity': 0.3
 	}, 100).delay(100).animate({
 		'opacity': 0.8
