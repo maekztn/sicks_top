@@ -29,6 +29,10 @@ body{
 .box-row:nth-child(even){
   margin-left: -140px;
 }
+<<<<<<< HEAD
+
+/* submenuのボタン */
+=======
 .btn{
   cursor: pointer;
 }
@@ -36,6 +40,7 @@ body{
 /* ===================================================================
  サブメニュー部分
 =================================================================== */
+>>>>>>> 3d965d2a3a41a2477562256b2197da2701a1a8f7
 .nav-btn {
   position: fixed;
   width: 46.19px; 
@@ -343,11 +348,7 @@ body{
   left: -100%;
   right: -100%;
 }
-/* 指定の位置にbackgroundで画像配置 */
-.box0910{
-  background-image: url(../images/bag.jpg);
-}
-/* 六角形テクスチャスタイル */
+
 .texture{
   background-image: url(../images/member_bg.png);
   background-size: 4px;
@@ -357,11 +358,23 @@ body{
   mix-blend-mode: multiply;
   opacity: .2;
 }
+
+.cont a{
+  display: block;
+  height: 100%;
+}
+.cont0{
+  background-image: url(../images/bag.jpg);
+}
+
+=======
 /* 六角形カラースタイル */
+>>>>>>> 3d965d2a3a41a2477562256b2197da2701a1a8f7
 .color{
+  pointer-events: none;
   background: #FD6A6A;
-  margin: -140px 0 0 0;
-  position: relative;
+  margin: 0 0 0 0;
+  position: absolute;
   top:0;
   z-index: 100;
   opacity: 0;
@@ -378,6 +391,7 @@ body{
   opacity: .8;
 }
 .member-txt {
+  pointer-events: none;
   position: absolute;
   z-index: 1000;
   color: #fff;
@@ -459,9 +473,6 @@ body{
   }
   .hexagon:nth-child(odd){  float: left;}
   .hexagon:nth-child(even){  float: right;}
-  .hexagon:nth-child(2){
-    background-image: url(../images/bag.jpg); 
-  }
   .hexTop:after, .hexBottom:after{
     transform: rotate(45deg) scaleX(1.7321) translateY(-37.4145px);
   }

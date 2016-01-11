@@ -47,17 +47,17 @@ $(function(){
 
 		var cont_place = ['.box0710', '.box0711', '.box0810', '.box0811', '.box0910', '.box0911', '.box1010', '.box1011', '.box1111', '.box1210', '.box1211']
 
-		$('.box-wrap-sp .cont').each(function(){
-			console.log($(this));
+		$('.box-wrap-sp .cont').each(function(i){
+			console.log(i);
 			var num = Math.floor(Math.random()*cont_place.length);
 
-			//$(cont_place[num]).addClass('hexMember btn').append($(this))
-		});
+			var texturediv = $('<div class="texture">').append($('.texture', this).html());
+			var colordiv = $('<div class="color">').append($('.color', this).html());
 
-		// $('.box0910').addClass('hexMember btn').append('<div class="texture">').append('<div class="member-txt"><h2 class="member-txt-genre">ART & DESIGN</h2><p class="member-txt-name">HIKARI<br>TANIMOTO</p></div>');
-		// $('.texture').append($('<div>').addClass('hexTop')).append($('<div>').addClass('hexBottom'));
-		// $('.box0910').append('<div class="color">');
-		// $('.color').append($('<div>').addClass('hexTop')).append($('<div>').addClass('hexBottom'));
+			$(cont_place[num]).addClass('hexMember cont cont'+i)
+				.append(texturediv).append($('<div class="member-txt">').append($('.member-txt', this).html()))
+				.append(colordiv);
+		});
 
 		$('.hexagon').on('click', function(){box_rotate($(this));});
 	}
@@ -102,7 +102,7 @@ function rotate_timer(){
 }
 
 function box_rotate(target){
-	if(target.hasClass('btn'))return false;
+	if(target.hasClass('cont'))return false;
 	var rotate = target.css('rotate') + 60;
 	target.animate({zIndex:1},{
 		//1秒かけてアニメーション
