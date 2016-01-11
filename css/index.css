@@ -1,4 +1,7 @@
 @charset "utf-8";
+/* ===================================================================
+ 共通部分
+=================================================================== */
 @font-face{
   font-family: futura;
   src: url("../fonts/Futura.ttf") format("truetype");
@@ -9,10 +12,12 @@ body{
   background: url(../images/bg.png);
 }
 
+/* ===================================================================
+ box-wrap部分
+=================================================================== */
 .box-wrap-sp{
   display: none;
 }
-
 .box-wrap{
   position: absolute;
   top: 50%;
@@ -21,16 +26,16 @@ body{
   width: 6000px;
   height: 1600px;
 }
-
 .box-row:nth-child(even){
   margin-left: -140px;
 }
-
 .btn{
   cursor: pointer;
 }
 
-/* submenuのボタン */
+/* ===================================================================
+ サブメニュー部分
+=================================================================== */
 .nav-btn {
   position: fixed;
   width: 46.19px; 
@@ -62,6 +67,7 @@ body{
   width: 0;
   border-right: 23.09px solid #000;
 }
+/* 三本線ボタン */
 .icons_btn{
   position: absolute;
   right: calc(50% - 11px);
@@ -75,7 +81,6 @@ body{
   transition: all .4s;
   box-sizing: border-box;
 }
-
 .icons_btn span {
   position: absolute;
   left: 0;
@@ -200,16 +205,13 @@ body{
     transform: translateY(-8px) rotate(-45deg);
   }
 }
-
 /* active着いてからの処理 */
 .nav-btn.active {  background: #fff;}
 .nav-btn.active:before{  border-left: 23.09px solid #fff;}
 .nav-btn.active:after{  border-right: 23.09px solid #fff;}
 .nav-btn.active span{ background: #000;}
-
 /* nav-btnのhover処理 */
 .nav-btn:hover{ opacity: .8;}
-
 /* side-menu */
 .side-menu{
   height: 100%;
@@ -254,6 +256,11 @@ body{
   pointer-events: none;
 }
 
+
+/* ===================================================================
+ 六角形、テクスチャ、カラー、文字のスタイル
+=================================================================== */
+/*　六角形スタイル　*/
 .hexagon,
 .texture,
 .color {
@@ -263,12 +270,10 @@ body{
   margin: -30px 100px;
   background: #e6e6e6;
   opacity: .8;
-  /*background-image: url(http://csshexagon.com/img/meow.jpg);*/
   background-size: auto 161.6581px;
   background-position: center;
   float: left;
 }
-
 .hexTop,
 .hexBottom {
   position: absolute;
@@ -282,7 +287,6 @@ body{
   background: inherit;
   left: 20.50px;
 }
-
 .hexTop:after,
 .hexBottom:after {
   content: "";
@@ -297,25 +301,20 @@ body{
   transform-origin: 0 0;
   background: inherit;
 }
-
 .hexTop {
   left: -49.4975px;
   top: 21px;
 }
-
 .hexTop:after {
   background-position: left -2px center;
 }
-
 .hexBottom {
   bottom: 19.5025px;
   left: 31px;
 }
-
 .hexBottom:after {
   background-position: right center;
 }
-
 .hexagon:after {
   content: "";
   position: absolute;
@@ -326,6 +325,7 @@ body{
   z-index: 2;
   background: inherit;
 }
+/* ロゴ部分 */
 .logo{
   background: transparent;
   pointer-events: none;
@@ -343,9 +343,11 @@ body{
   left: -100%;
   right: -100%;
 }
+/* 指定の位置にbackgroundで画像配置 */
 .box0910{
   background-image: url(../images/bag.jpg);
 }
+/* 六角形テクスチャスタイル */
 .texture{
   background-image: url(../images/member_bg.png);
   background-size: 4px;
@@ -355,7 +357,7 @@ body{
   mix-blend-mode: multiply;
   opacity: .2;
 }
-
+/* 六角形カラースタイル */
 .color{
   background: #FD6A6A;
   margin: -140px 0 0 0;
@@ -365,6 +367,7 @@ body{
   opacity: 0;
   mix-blend-mode: overlay;
 }
+/* 六角形文字スタイル */
 .hexMember{
   transition: .2s all;
 }
@@ -404,7 +407,9 @@ body{
   transform: rotate(60deg);
 }
 
-
+/* ===================================================================
+ フッター
+=================================================================== */
 .footer{
   position: fixed;
   bottom: 0;
@@ -417,7 +422,11 @@ body{
 }
 
 
+/* ===================================================================
 
+ レスポンシブ
+
+=================================================================== */
 @media screen and (max-width:768px){
   body{
     overflow: inherit;
@@ -429,6 +438,9 @@ body{
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+  }
+  .box-wrap{
+    height: auto;
   }
   .box-wrap-sp{
     display: block;
@@ -474,11 +486,9 @@ body{
 
 
 
-/*
-
-  privacypolisyページ
-
-*/
+/* ===================================================================
+ privacypolicyページ
+=================================================================== */
 #privacypolicy{
   overflow: visible;
   font-size: 100%;
@@ -539,12 +549,9 @@ body{
   }
 }
 
-
-/*
-
-  loading画面
-
-*/
+/* ===================================================================
+ loading画面
+=================================================================== */
 .loading{
   width: 100%;
   height: 100%;
