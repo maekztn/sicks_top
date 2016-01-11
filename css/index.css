@@ -348,10 +348,6 @@ body{
   left: -100%;
   right: -100%;
 }
-/* 指定の位置にbackgroundで画像配置 */
-.box0910{
-  background-image: url(../images/bag.jpg);
-}
 /* 六角形テクスチャスタイル */
 .texture{
   background-image: url(../images/member_bg.png);
