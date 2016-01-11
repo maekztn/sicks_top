@@ -49,8 +49,6 @@ $(function(){
 		$('.color').append($('<div>').addClass('hexTop')).append($('<div>').addClass('hexBottom'));
 	}
 
-	timer();
-
 	$('.hexagon').on('click', function(){
 		box_rotate($(this));
 	})
