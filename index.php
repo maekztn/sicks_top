@@ -59,91 +59,91 @@
 </nav>
 
 
-<?php if($browser == 'sp'): ?>
-    <div class="box-wrap-sp">
-        <div class="box-inner-sp">
-            <div class="hexagon box1110">
+
+<div class="box-wrap-sp">
+    <div class="box-inner-sp">
+        <div class="hexagon logo">
+            <div class="hexTop"></div>
+            <div class="hexBottom"></div>
+            <img src="./images/logo.png" alt="sicks">
+        </div>
+        <div class="hexagon">
+            <div class="hexTop"></div>
+            <div class="hexBottom"></div>
+            <div class="texture">
                 <div class="hexTop"></div>
                 <div class="hexBottom"></div>
-                <img src="./images/logo.png" alt="sicks">
             </div>
-            <div class="hexagon">
+            <div class="color">
                 <div class="hexTop"></div>
-                <div class="hexBottom"></div>
-                <div class="texture">
-                    <div class="hexTop"></div>
-                    <div class="hexBottom"></div>
-                </div>
-                <div class="color">
-                    <div class="hexTop"></div>
-                <div class="hexBottom"></div>
-                </div>
+            <div class="hexBottom"></div>
             </div>
-            <div class="hexagon">
+            <div class="member-txt"><h2 class="member-txt-genre">ART & DESIGN</h2><p class="member-txt-name">HIKARI<br>TANIMOTO</p></div>
+        </div>
+        <div class="hexagon">
+            <div class="hexTop"></div>
+            <div class="hexBottom"></div>
+            <div class="texture">
                 <div class="hexTop"></div>
                 <div class="hexBottom"></div>
-                <div class="texture">
-                    <div class="hexTop"></div>
-                    <div class="hexBottom"></div>
-                </div>
-                <div class="color">
-                    <div class="hexTop"></div>
-                <div class="hexBottom"></div>
-                </div>
             </div>
-            <div class="hexagon">
+            <div class="color">
                 <div class="hexTop"></div>
-                <div class="hexBottom"></div>
-                <div class="texture">
-                    <div class="hexTop"></div>
-                    <div class="hexBottom"></div>
-                </div>
-                <div class="color">
-                    <div class="hexTop"></div>
-                <div class="hexBottom"></div>
-                </div>
+            <div class="hexBottom"></div>
             </div>
-            <div class="hexagon">
+        </div>
+        <div class="hexagon">
+            <div class="hexTop"></div>
+            <div class="hexBottom"></div>
+            <div class="texture">
                 <div class="hexTop"></div>
                 <div class="hexBottom"></div>
-                <div class="texture">
-                    <div class="hexTop"></div>
-                    <div class="hexBottom"></div>
-                </div>
-                <div class="color">
-                    <div class="hexTop"></div>
-                <div class="hexBottom"></div>
-                </div>
             </div>
-            <div class="hexagon">
+            <div class="color">
                 <div class="hexTop"></div>
-                <div class="hexBottom"></div>
-                <div class="texture">
-                    <div class="hexTop"></div>
-                    <div class="hexBottom"></div>
-                </div>
-                <div class="color">
-                    <div class="hexTop"></div>
-                <div class="hexBottom"></div>
-                </div>
+            <div class="hexBottom"></div>
             </div>
-            <div class="hexagon">
+        </div>
+        <div class="hexagon">
+            <div class="hexTop"></div>
+            <div class="hexBottom"></div>
+            <div class="texture">
                 <div class="hexTop"></div>
                 <div class="hexBottom"></div>
-                <div class="texture">
-                    <div class="hexTop"></div>
-                    <div class="hexBottom"></div>
-                </div>
-                <div class="color">
-                    <div class="hexTop"></div>
+            </div>
+            <div class="color">
+                <div class="hexTop"></div>
+            <div class="hexBottom"></div>
+            </div>
+        </div>
+        <div class="hexagon">
+            <div class="hexTop"></div>
+            <div class="hexBottom"></div>
+            <div class="texture">
+                <div class="hexTop"></div>
                 <div class="hexBottom"></div>
-                </div>
+            </div>
+            <div class="color">
+                <div class="hexTop"></div>
+            <div class="hexBottom"></div>
+            </div>
+        </div>
+        <div class="hexagon">
+            <div class="hexTop"></div>
+            <div class="hexBottom"></div>
+            <div class="texture">
+                <div class="hexTop"></div>
+                <div class="hexBottom"></div>
+            </div>
+            <div class="color">
+                <div class="hexTop"></div>
+            <div class="hexBottom"></div>
             </div>
         </div>
     </div>
-<?php else: ?>
-    <div class="box-wrap"></div>
-<?php endif; ?> 
+</div>
+
+<div class="box-wrap"></div>
 
 <footer class="footer">
     <p><small>Copyright &copy; sicks All Rights Reserved.</small></p>
