@@ -276,6 +276,9 @@ body{
   background-position: center;
   float: left;
 }
+.hexagon{
+  z-index: 0;
+}
 .hexTop,
 .hexBottom {
   position: absolute;
@@ -354,15 +357,34 @@ body{
   z-index: 10;
   mix-blend-mode: multiply;
   opacity: .2;
+  pointer-events: none;
 }
 
 .cont a{
   display: block;
   height: 100%;
+  background: inherit;
+  position: relative;
+  z-index: 9999;
 }
+
+/* contの背景設定 */
 .cont0{
-  background-image: url(../images/bag.jpg);
+  background-image: url(../images/tanimoto.gif);
 }
+.cont1{
+  background-image: url(../images/oosaki.gif);
+}
+.cont2{
+  background-image: url(../images/oomae.gif);
+}
+.cont3{
+  background-image: url(../images/seto.gif);
+}
+.cont4{
+  background-image: url(../images/kitao.gif);
+}
+
 /* 六角形カラースタイル */
 .color{
   pointer-events: none;
@@ -381,7 +403,7 @@ body{
 .hexMember:hover{
   transform: rotate(300deg);
 }
-.hexMember:hover > .color{
+.hexMember:hover .color{
   opacity: .8;
 }
 .member-txt {
@@ -410,7 +432,7 @@ body{
   font-size: 120%;
   line-height: 1.3em;
 }
-.hexMember:hover > .member-txt{
+.hexMember:hover .member-txt{
   opacity: 1;
   transform: rotate(60deg);
 }
@@ -471,6 +493,11 @@ body{
   .hexagon:nth-child(even){  float: right;}
   .hexTop:after, .hexBottom:after{
     transform: rotate(45deg) scaleX(1.7321) translateY(-37.4145px);
+  }
+  .hexTop:after{
+    left: 0;
+    top: -47px;
+    background-position: left 18px top -11px;
   }
   .hexBottom:after{
     background-position: right 20px center;
