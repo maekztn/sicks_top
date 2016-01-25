@@ -407,6 +407,7 @@ body{
   opacity: .8;
 }
 .member-txt {
+  text-align: center;
   pointer-events: none;
   position: absolute;
   z-index: 1000;
@@ -495,12 +496,12 @@ body{
     transform: rotate(45deg) scaleX(1.7321) translateY(-37.4145px);
   }
   .hexTop:after{
-    left: 0;
-    top: -47px;
-    background-position: left 18px top -11px;
+    left: 25px;
+    top: -20px;
   }
   .hexBottom:after{
-    background-position: right 20px center;
+    left: 27px;
+    top: -20px;
   }
   .member-txt{
     opacity: 1;
