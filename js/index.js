@@ -45,10 +45,9 @@ $(function(){
 		//ロゴ追加
 		$('.box1110').addClass('logo').append('<img src="./images/logo.png" alt="sicks">');
 
-		var cont_place = ['.box0710', '.box0711', '.box0810', '.box0811', '.box0910', '.box0911', '.box1010', '.box1011', '.box1111', '.box1210', '.box1211']
+		var cont_place = ['.box0710', '.box0711', '.box0810', '.box0811', '.box0910', '.box0911', '.box1011', '.box1111', '.box1210', '.box1211']
 
 		$('.box-wrap-sp .cont').each(function(i){
-			console.log(i);
 			var num = Math.floor(Math.random()*cont_place.length);
 
 			var texturediv = $('<div class="texture">').append($('.texture', this).html());
@@ -57,6 +56,10 @@ $(function(){
 			$(cont_place[num]).addClass('hexMember cont cont'+i)
 				.append(texturediv).append($('<div class="member-txt">').append($('.member-txt', this).html()))
 				.append(colordiv);
+
+			$(cont_place[num]).wrapInner($('<a>').attr('href', $('a', this).attr('href')));
+
+			cont_place.splice(num, 1);
 		});
 
 		$('.hexagon').on('click', function(){box_rotate($(this));});

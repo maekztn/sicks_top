@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<title></title>
+<title>/sicks</title>
 <meta charset="utf-8">
 <meta name="description" content="">
 <meta name="author" content="">
@@ -67,20 +67,21 @@
             <div class="hexBottom"></div>
             <img src="./images/logo.png" alt="sicks">
         </div>
-        <div class="hexagon cont0 cont">
+        <div class="hexagon cont0 cont"><a href="#tanimoto">
             <div class="hexTop"></div>
             <div class="hexBottom"></div>
-            <div class="texture"><a href="#test">
+            <div class="texture">
                 <div class="hexTop"></div>
                 <div class="hexBottom"></div>
-            </a></div>
+            </div>
             <div class="color">
                 <div class="hexTop"></div>
             <div class="hexBottom"></div>
             </div>
             <div class="member-txt"><h2 class="member-txt-genre">ART & DESIGN</h2><p class="member-txt-name">HIKARI<br>TANIMOTO</p></div>
-        </div>
-        <div class="hexagon">
+        </a></div>
+
+        <div class="hexagon cont1 cont"><a href="#oosaki">
             <div class="hexTop"></div>
             <div class="hexBottom"></div>
             <div class="texture">
@@ -91,8 +92,9 @@
                 <div class="hexTop"></div>
             <div class="hexBottom"></div>
             </div>
-        </div>
-        <div class="hexagon">
+            <div class="member-txt"><h2 class="member-txt-genre">ART & DESIGN</h2><p class="member-txt-name">JUN<br>OOSAKI</p></div>
+        </a></div>
+        <div class="hexagon cont2 cont"><a href="#seto">
             <div class="hexTop"></div>
             <div class="hexBottom"></div>
             <div class="texture">
@@ -103,8 +105,9 @@
                 <div class="hexTop"></div>
             <div class="hexBottom"></div>
             </div>
-        </div>
-        <div class="hexagon">
+            <div class="member-txt"><h2 class="member-txt-genre">ART & DESIGN</h2><p class="member-txt-name">KAZUTO<br>OOMAE</p></div>
+        </a></div>
+        <div class="hexagon cont3 cont"><a href="#oomae">
             <div class="hexTop"></div>
             <div class="hexBottom"></div>
             <div class="texture">
@@ -115,8 +118,9 @@
                 <div class="hexTop"></div>
             <div class="hexBottom"></div>
             </div>
-        </div>
-        <div class="hexagon">
+            <div class="member-txt"><h2 class="member-txt-genre">ART & DESIGN</h2><p class="member-txt-name">NANAKO<br>SETO</p></div>
+        </a></div>
+        <div class="hexagon cont4 cont"><a href="#kitao">
             <div class="hexTop"></div>
             <div class="hexBottom"></div>
             <div class="texture">
@@ -127,7 +131,8 @@
                 <div class="hexTop"></div>
             <div class="hexBottom"></div>
             </div>
-        </div>
+            <div class="member-txt"><h2 class="member-txt-genre">ART & DESIGN</h2><p class="member-txt-name">MARIKA<br>KITAO</p></div>
+        </a></div>
         <div class="hexagon">
             <div class="hexTop"></div>
             <div class="hexBottom"></div>
