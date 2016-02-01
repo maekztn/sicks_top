@@ -21,7 +21,7 @@
 <link rel="stylesheet" type="text/css" href="css/animsition.min.css">
 <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
 <link rel="stylesheet" type="text/css" href="/common/css/common.css">
-<link rel="shortcut icon" href="">
+
 <?php
   $ua=$_SERVER['HTTP_USER_AGENT'];
   $browser = ((strpos($ua,'iPhone')!==false)||(strpos($ua,'iPod')!==false)||(strpos($ua,'Android')!==false));

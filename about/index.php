@@ -10,7 +10,7 @@
 <link rel="stylesheet" type="text/css" href="../css/reset.css">
 <link rel="stylesheet" href="../css/index.css">
 <link rel="stylesheet" href="../css/animsition.min.css">
-<link rel="shortcut icon" href="">
+
 <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
 <script src="../js/index.js"></script>
 <?php
