@@ -40,7 +40,7 @@ body{
 =================================================================== */
 .nav-btn {
   position: fixed;
-  width: 46.19px; 
+  width: 46.19px;
   height: 80px;
   background-color: #000;
   opacity: .95;
@@ -267,7 +267,7 @@ body{
 .texture,
 .color {
   position: relative;
-  width: 80.83px; 
+  width: 80.83px;
   height: 140px;
   margin: -30px 100px;
   background: #e6e6e6;
@@ -640,4 +640,98 @@ body{
 .loading-img img{
   width: 100%;
   height: auto;
+}
+
+/* ===================================================================
+ aboutページ
+=================================================================== */
+#about{
+  overflow: visible;
+  font-size: 100%;
+  text-align: justify;
+}
+.ab-container{
+  width: 85%;
+  margin: 40px auto;
+}
+.ab-ttl{
+  font-size: 130%;
+  margin-bottom: 10px;
+  font-family: futura;
+}
+.ab-ttl-txt{
+  margin-bottom: 30px;
+  font-size: 91%;
+}
+.ab-section{
+  background: rgba(255,255,255,.8);
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 20px;
+  margin-bottom: 40px;
+}
+.ab-section .images1,.ab-section .images2{
+  max-width: 940px;
+  margin: 0 auto;
+  border: none;
+}
+.ab-section .images1 li,.ab-section .images2 li{
+  width: 21.276596%;
+  margin-left: 86px;
+  float: left;
+}
+.ab-section .images1 li:first-child{
+  margin: 0px;
+}
+.ab-section .images2 li:first-child{
+  margin-top: -122px;
+  margin-left: 140px;
+}
+.ab-section .images2 li:nth-child(2){
+  margin-top: -122px;
+  margin-left: 88px;
+}
+.ab-section .images2 li:nth-child(3){
+  margin-top: -122px;
+  margin-left: 86px;
+}
+.ab-section .frame{
+  width: 100%;
+}
+.ab-section-ttl{
+  font-size: 100%;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+.ab-section p,
+.ab-section li{
+  font-size: 85%;
+  color: #666;
+}
+.ab-section p{
+  margin-top: 50px;
+  text-align: center;
+}
+.ab-section ul{
+  border: 1px solid #ccc;
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 10px 0 15px 0;
+}
+.ab-section li{
+  font-size: 85%;
+}
+#about .footer{
+  position: static;
+}
+@media screen and (max-width:768px){
+  .side-menu{
+    padding: 0 30px 30px 30px;
+  }
+  .pp-container{
+    width: 90%;
+  }
 }
