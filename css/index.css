@@ -372,17 +372,32 @@ body{
 .cont0{
   background-image: url(../images/tanimoto.gif);
 }
+.cont0:hover{
+  background-image: url(../images/tanimoro_on.jpg);
+}
 .cont1{
   background-image: url(../images/oosaki.gif);
+}
+.cont1:hover{
+  background-image: url(../images/oosaki_on.jpg);
 }
 .cont2{
   background-image: url(../images/oomae.gif);
 }
+.cont2:hover{
+  background-image: url(../images/oomae_on.jpg);
+}
 .cont3{
   background-image: url(../images/seto.gif);
 }
+.cont3:hover{
+  background-image: url(../images/seto_on.jpg);
+}
 .cont4{
   background-image: url(../images/kitao.gif);
+}
+.cont4:hover{
+  background-image: url(../images/kitao_on.jpg);
 }
 
 /* 六角形カラースタイル */
