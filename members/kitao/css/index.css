@@ -1,0 +1,128 @@
+@charset "UTF-8";
+html,body{
+	height: 100%;
+}
+
+*{
+	font-size: 100%;
+}
+
+body{
+	min-width: 960px;
+	min-height: 700px;
+	background: #000;
+	position: relative;
+}
+
+.wrapper{
+	width: 960px;
+	height: 700px;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	background: url(../images/bg.png) no-repeat 50% 50%;
+}
+
+.wrapper .btns{
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+
+.wrapper .btns li{
+	position: absolute;
+	z-index: 0;
+	transition: 1s ease;
+	transition-property: top, left;
+}
+.wrapper .btns .link:hover{
+	opacity: 0.7;
+}
+.wrapper .btns li span{
+	font-family: "小塚ゴシック Pr6N", Kozuka Gothic Pr6N;
+	display: block;
+	text-align: center;
+	font-weight: bold;
+	margin-top: 5px;
+	font-size: 130%;
+}
+.wrapper .btns li a{
+	display: block;
+	text-decoration: none;
+	color: #000;
+}
+
+.wrapper .btns li:nth-child(1){
+	top: 100px;
+	left: 380px;
+}
+.wrapper .btns li:nth-child(2){
+	top: 250px;
+	left: 610px;
+}
+
+.wrapper .btns li:nth-child(3){
+	top: 250px;
+	left: 160px;
+}
+.wrapper .btns li:nth-child(4){
+	top: 380px;
+	left: 380px;
+}
+
+
+/* js active */
+.active{
+	opacity: 1;
+	top: 100px !important;
+	left: 380px !important;
+	z-index: 10 !important;
+}
+.active:hover{
+	opacity: 1 !important;
+}
+
+._js-hover:hover img{
+	opacity: .3 !important;
+}
+._js-hover:hover:before{
+	content: "BACK";
+	display: inline-block;
+	width: 195px;
+	font-size: 200%;
+	font-weight: bold;
+	text-align: center;
+	position: absolute;
+	top: 86px;
+	left: 0;
+	right: 0;
+	z-index: 10000;
+	text-shadow: #fff 1px 1px 0px, #fff -1px 1px 0px,#fff 1px -1px 0px, #fff -1px -1px 0px;
+	pointer-events: none;
+}
+
+.layer{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	display: none;
+	background: url(../images/bg.png) no-repeat 50% 50%;
+}
+.layer h2{
+	position: absolute;
+	top: 317px;
+	left: 350px;
+	padding-left: 200px;
+	border-bottom: 1px solid #000;
+}
+.layer .img{
+	position: absolute;
+	top: 278px;
+	left: 214px;
+}

@@ -37,19 +37,19 @@
 </div>
 <nav class="side-menu">
     <dl class="side-menu-list">
-        <dt><a href="../index.html">HOME</a></dt>
-        <dt><a href="#">ABOUT</a></dt>
+        <dt><a href="/">HOME</a></dt>
+        <dt><a href="/about/">ABOUT</a></dt>
         <dt>SUBJECT</dt>
-        <dd><a href="#">All</a></dd>
-        <dd><a href="#">Art &amp; Design</a></dd>
+        <dd><a href="/">All</a></dd>
+        <dd><a href="/">Art &amp; Design</a></dd>
         <dd class="disabled"><a href="#">Business &amp; Management</a></dd>
         <dd class="disabled"><a href="#">Computer Science</a></dd>
         <dd class="disabled"><a href="#">DigitalGame &amp; Amusument</a></dd>
         <dd class="disabled"><a href="#">Engineering for Embedded Systems</a></dd>
         <dt>SHARE</dt>
-        <dd><a href="#">Facebook</a></dd>
-        <dd><a href="#">Twitter</a></dd>
-        <dd><a href="#">LINE</a></dd>
+        <dd><a href="http://www.facebook.com/share.php?u=http://sicks.work/" target="_blank">Facebook</a></dd>
+        <dd><a href="https://twitter.com/share?url=http://sicks.work/&text=SICKS&hashtags=SICKS" target="_blank">Twitter</a></dd>
+        <dd><a href="http://line.me/R/msg/text/?SICKS | 京都コンピュータ学院鴨川校3回生デザイン学科のメンバーによるハンドメイドアイテム紹介サイト%0D%0Ahttp://sicks.work/" target="_blank">LINE</a></dd>
         <dt><a href="../privacypolicy/index.php">PRIVACY POLICY</a></dt>
     </dl>
 </nav>

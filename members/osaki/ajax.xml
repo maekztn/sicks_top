@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<items>
+	<item>
+		<id>1</id>
+		<img01>neckless01</img01>
+		<img02>neckless02</img02>
+		<img03>neckless03</img03>
+		<img04>neckless04</img04>
+		<itemNum>JUN'S COLLECTION 01</itemNum>
+		<title>NECKLESS</title>
+		<caption>三角モチーフのネックレス。</caption>
+		<genre>ACCESSORY</genre>
+	</item>
+	<item>
+		<id>2</id>
+		<img01>bracelet01</img01>
+		<img02>bracelet02</img02>
+		<img03>bracelet03</img03>
+		<img04>bracelet04</img04>
+		<itemNum>JUN'S COLLECTION 02</itemNum>
+		<title>BRACELET</title>
+		<caption>シンプルなチェーンのブレスレット。何もない腕へのちょっとしたアクセントに。</caption>
+		<genre>ACCESSORY</genre>
+	</item>
+	<item>
+		<id>3</id>
+		<img01>eircuff01</img01>
+		<img02>eircuff02</img02>
+		<img03>eircuff03</img03>
+		<img04>eircuff04</img04>
+		<itemNum>JUN'S COLLECTION 03</itemNum>
+		<title>EIRCUFF</title>
+		<caption>三角を模った引っ掛けるたタイプのイヤーカフ。これひとつで少しオシャレ気分。</caption>
+		<genre>ACCESSORY</genre>
+	</item>
+	<item>
+		<id>4</id>
+		<img01>lampshade01</img01>
+		<img02>lampshade02</img02>
+		<img03>lampshade03</img03>
+		<img04>lampshade04</img04>
+		<itemNum>JUN'S COLLECTION 04</itemNum>
+		<title>LAMP SHADE</title>
+		<caption>ボンドに浸した麻紐をボールに巻きつけ、乾燥させて固めたハンドメイドランプシェード。</caption>
+		<genre>OBJET</genre>
+	</item>
+	<item>
+		<id>5</id>
+		<img01>terrarium01</img01>
+		<img02>terrarium02</img02>
+		<img03>terrarium03</img03>
+		<img04>terrarium04</img04>
+		<itemNum>JUN'S COLLECTION 05</itemNum>
+		<title>TERRARIUM</title>
+		<caption>空中の水分を体に取り入れて育つ「エアプランツ」をガラス容器に入れ部屋のオブジェに。</caption>
+		<genre>OBJET</genre>
+	</item>
+	<item>
+		<id>6</id>
+		<img01>candle01</img01>
+		<img02>candle02</img02>
+		<img03>candle03</img03>
+		<img04>candle04</img04>
+		<itemNum>JUN'S COLLECTION 06</itemNum>
+		<title>CANDLE</title>
+		<caption>ロウを溶かし、刻んだクレヨンを混ぜて色付けられたキャンドル。傾けて固めることで３層に。</caption>
+		<genre>OBJET</genre>
+	</item>
+	<item>
+		<id>7</id>
+		<img01>nenga01</img01>
+		<img02>nenga02</img02>
+		<img03>nenga03</img03>
+		<img04>nenga04</img04>
+		<itemNum>JUN'S COLLECTION 07</itemNum>
+		<title>NEW YEAR'S CARD</title>
+		<caption>2016年、申年の年賀状デザイン。十二支の中で猿が引き立つようなデザインに。</caption>
+		<genre>GRAPHIC</genre>
+	</item>
+	<item>
+		<id>8</id>
+		<img01>calender01</img01>
+		<img02>calender02</img02>
+		<img03>calender03</img03>
+		<img04>calender04</img04>
+		<itemNum>JUN'S COLLECTION 08</itemNum>
+		<title>CALENDER</title>
+		<caption>2016年版のカレンダーデザイン。三角をモチーフに月ごとのイメージを抽象的に表しています。</caption>
+		<genre>GRAPHIC</genre>
+	</item>
+	<item>
+		<id>9</id>
+		<img01>iPhoneCase01</img01>
+		<img02>iPhoneCase02</img02>
+		<img03>iPhoneCase03</img03>
+		<img04>iPhoneCase04</img04>
+		<itemNum>JUN'S COLLECTION 09</itemNum>
+		<title>IPHONE CASE</title>
+		<caption>シンプルなiPhoneケースをデザイン。</caption>
+		<genre>GRAPHIC</genre>
+	</item>
+</items>

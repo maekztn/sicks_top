@@ -1,0 +1,469 @@
+@charset "UTF-8";
+
+/* header */
+header a{
+	color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*mainのロゴとぼたんやで*/
+#top{
+	color: #0e3355;
+	padding: 240px 0 175px;
+}
+#top h2{
+	font-size: 310%;
+	width: 376px;
+	letter-spacing: 15px;
+	margin: 0 auto 40px ;
+	line-height: 1.4;
+}
+.top_btns{
+	overflow: hidden;
+	width: 746px;
+	margin: 0 auto; 
+}
+.top_btns li{
+	float: left;
+	font-size: 150%;
+	font-weight: bold;
+}
+.top_btns li a{
+	display: block;
+	width: 200px;
+	height: 200px;
+	border: 1px solid #0e3355;
+	border-radius: 100px;
+	position: relative;
+}
+.top_btns li span{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	height: 20px;
+	text-align: center;
+	color: #0e3355;
+}
+.top_btns li:not(:first-child){
+	margin-left: 70px;
+}
+.top_btns li a:hover{
+	background: #f4f8fb;
+	border-color: #fff;
+	transition: 0.5s;
+}
+/*ここまでやで*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+    真珠のページ
+
+*/
+
+#pearl{
+	background: url(../images/index/main01.jpg) no-repeat;
+	background-size: cover;
+}
+#pearl .inner{
+	position: relative;
+	display: none;
+}
+
+/*パールの文字の設定*/
+#pearl h3{
+	font-size: 323%;
+	letter-spacing: 0.3em;
+	position: relative;
+	top: 45px;
+	left: -170px;
+	z-index: 1;
+	width: 290px;
+	height: 290px;
+	display: table-cell;
+	vertical-align: middle;
+	text-indent: 170px;
+	color: #33618c;
+}
+#pearl h3:after{
+	content:'';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 290px;
+	height:290px;
+	border-radius: 50%;
+	overflow: hidden;
+	background: rgba(255,255,255,.4);
+	z-index: -1;
+}
+/*ここまで設定*/
+
+#pearl .image1{
+  top: 304px;
+  left: -38px;
+}
+#pearl .image2{
+  top: 523px;
+  left: 153px;
+}
+#pearl .btns{
+  top: 650px;
+  left: 414px;
+
+}
+#pearl .btns li{
+	color: #1f4161;
+	position: absolute;
+	font-size: 130%;
+}
+#pearl .btns li:nth-child(1){
+  top: 62px;
+  left: 54px;
+    	letter-spacing: 0.4em;
+}
+#pearl .btns li:nth-child(2){
+  top: 100px;
+  right: 40px;
+  	letter-spacing: 0.4em;
+
+}
+#pearl .link1{
+  top: 305px;
+  left: 324px;
+  width: 200px;
+  height: 200px;
+  background: none;
+  border: 1px solid #fff;
+}
+#pearl .link1 a{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	height: 60px;
+	text-align: center;
+	color:#FFF;
+	font-size: 140%;
+	font-family:'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3';
+	line-height: 1.4em;
+	letter-spacing: 0.4em;
+	  padding-left: 10px;
+}
+/*pa-ru*/
+
+
+
+
+
+
+#pearl{
+	display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+    お花のページ
+
+*/
+
+#flower{
+	background: url(../images/index/main02.jpg) no-repeat;
+	background-size: cover;
+}
+#flower .inner{
+	position: relative;
+	display: none;
+}
+
+/*フラワーの文字の設定*/
+#flower h3{
+	font-size: 323%;
+	letter-spacing: 0.3em;
+	position: relative;
+	top: 517.8px;
+	left: 517.3px;
+	z-index: 1;
+	width: 290px;
+	height: 290px;
+	display: table-cell;
+	vertical-align: middle;
+	text-indent: -76px;
+	color: #FFF;
+}
+#flower h3:after{
+	content:'';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 290px;
+	height:290px;
+	border-radius: 50%;
+	overflow: hidden;
+	background: rgba(255,255,255,.4);
+	z-index: -1;
+}
+/*ここまで設定*/
+
+#flower .image1{
+	top: 229px;
+ 	left: 552px;
+}
+#flower .image2{
+	top: 552px;
+	left: 807px;
+}
+#flower .btns{
+	top: 264px;
+	left: 840px;
+}
+#flower .btns li{
+	color: #FFF;
+	position: absolute;
+	font-size: 130%;
+}
+#flower .btns li:nth-child(1){
+  top: 112px;
+  left: 54px;
+    	letter-spacing: 0.4em;
+}
+#flower .btns li:nth-child(2){
+  top: 150px;
+  right: 40px;
+  	letter-spacing: 0.4em;
+
+}
+#flower .link2{
+  top: 305px;
+  left: 324px;
+  width: 200px;
+  height: 200px;
+  background: none;
+  border: 1px solid #fff;
+}
+#flower .link2 a{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	height: 60px;
+	text-align: center;
+	color:#FFF;
+	font-size: 140%;
+	font-family:'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3';
+	line-height: 1.4em;
+	letter-spacing: 0.4em;
+	  padding-left: 10px;
+}
+/*hurawa-*/
+
+
+
+
+
+
+#flower{
+	display: none;
+}
+
+
+
+
+
+
+
+
+
+
+/*
+
+    botann
+    のページ
+
+*/
+
+#button{
+	background: url(../images/index/main03.jpg) no-repeat;
+	background-size: cover;
+	display: none;
+}
+#button .inner{
+	position: relative;
+	display: none;
+}
+
+/*フラワーの文字の設定*/
+#button h3{
+	font-size: 323%;
+	letter-spacing: 0.3em;
+	position: relative;
+	top: 542.8px;
+	left: 355.3px;
+	z-index: 1;
+	width: 290px;
+	height: 290px;
+	display: table-cell;
+	vertical-align: middle;
+	text-indent: 190px;
+	color: #33618c;
+}
+#button h3:after{
+	content:'';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 290px;
+	height:290px;
+	border-radius: 50%;
+	overflow: hidden;
+	background: rgba(255,255,255,.4);
+	z-index: -1;
+}
+/*ここまで設定*/
+
+#button .image1{
+	top: -49px;
+	left: 132px;
+}
+#button .image2{
+	top: 205px;
+	left: -8px;
+}
+#button .btns{
+  top: 486px;
+  left: 70px;
+
+}
+#button .btns li{
+	color: #1f4161;
+	position: absolute;
+	font-size: 130%;
+}
+#button .btns li:nth-child(1){
+  top: 112px;
+  left: 54px;
+    	letter-spacing: 0.4em;
+}
+#button .btns li:nth-child(2){
+  top: 150px;
+  right: 40px;
+  	letter-spacing: 0.4em;
+
+}
+#button .link3{
+  top: 305px;
+  left: 324px;
+  width: 200px;
+  height: 200px;
+  background: none;
+  border: 1px solid #fff;
+}
+#button .link3 a{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	height: 60px;
+	text-align: center;
+	color:#FFF;
+	font-size: 140%;
+	font-family:'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3';
+	line-height: 1.4em;
+	letter-spacing: 0.4em;
+	  padding-left: 10px;
+}
+/*hurawa-*/
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:768px){
+    #top{
+        padding: 50% 0px;
+    }
+    #top h2{
+        font-size: 180%;
+        width: 270px;
+    }
+    header p{
+        width: 90px;
+        right: 20px;
+    }
+    header a img{
+        width: 100%;
+    }
+    .top_btns{
+        width: 276px;
+    }
+    .top_btns li{
+        font-size: 90%;
+    }
+    .top_btns li a{
+        width: 70px;
+        height: 70px;
+    }
+    .top_btns li:not(:first-child){
+        margin-left: 30px;
+    }
+}
+
+
