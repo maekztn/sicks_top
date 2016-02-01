@@ -1,0 +1,27 @@
+@charset "utf-8";
+
+/*================
+	共通パーツ
+=================*/
+.top_link{
+	z-index: 90000;
+	position: fixed;
+	bottom: 30px;
+	left: 30px;
+	width: 124px;
+	height: 122px;
+}
+.top_link a{
+	position: relative;
+}
+.top_link img{
+	position: absolute;
+}
+.top_link img:first-child{
+	z-index: 1;
+	-webkit-transition: .3s all ease;
+	transition: .3s all ease;
+}
+.top_link img:first-child:hover{
+	opacity: 0;
+}
