@@ -160,6 +160,9 @@ body{
   height: 250px;
   background: #fff;
 }
+.item_img img{
+  width: 100%;
+}
 
 /*howtobuy*/
 .howtobuy_wrap h3,.howtobuy_wrap .subtxt{
@@ -210,6 +213,7 @@ body{
 .link_tw{
   width: 100px;
   margin-left: 160px;
+  margin-top: 10px;
 }
 
 /*contact*/
@@ -264,6 +268,9 @@ body{
   }
   .item_img{
     margin-top: 50px;
+    width: 100%;
+    height: auto;
+    background: none;
   }
   .item_caption h3{
     width: 100%;

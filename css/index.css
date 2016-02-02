@@ -399,6 +399,12 @@ body{
 .cont4:hover{
   background-image: url(../images/kitao_on.jpg);
 }
+.cont5{
+  background-image: url(../images/inoue.gif);
+}
+.cont5:hover{
+  background-image: url(../images/inoue_on.jpg);
+}
 
 /* 六角形カラースタイル */
 .color{
