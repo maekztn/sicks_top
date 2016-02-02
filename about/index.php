@@ -37,11 +37,11 @@
 </div>
 <nav class="side-menu">
     <dl class="side-menu-list">
-        <dt><a href="/">HOME</a></dt>
+        <dt><a href="../">HOME</a></dt>
         <dt><a href="/about/">ABOUT</a></dt>
         <dt>SUBJECT</dt>
-        <dd><a href="/">All</a></dd>
-        <dd><a href="/">Art &amp; Design</a></dd>
+        <dd><a href="../">All</a></dd>
+        <dd><a href="../">Art &amp; Design</a></dd>
         <dd class="disabled"><a href="#">Business &amp; Management</a></dd>
         <dd class="disabled"><a href="#">Computer Science</a></dd>
         <dd class="disabled"><a href="#">DigitalGame &amp; Amusument</a></dd>

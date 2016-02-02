@@ -20,7 +20,7 @@
 <link rel="stylesheet" type="text/css" href="css/style.css">
 <link rel="stylesheet" type="text/css" href="css/animsition.min.css">
 <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
-<link rel="stylesheet" type="text/css" href="/common/css/common.css">
+<link rel="stylesheet" type="text/css" href="../../common/css/common.css">
 
 <?php
   $ua=$_SERVER['HTTP_USER_AGENT'];
@@ -284,8 +284,8 @@
 	</div>
 
 	<div class="top_link">
-	    <p><a href="/"><img src="/common/images/ico_top.png" height="122" width="140">
-	    <img src="/common/images/ico_top_on.png"></a></p>
+	    <p><a href="../../"><img src="../../common/images/ico_top.png" height="122" width="140">
+	    <img src="../../common/images/ico_top_on.png"></a></p>
 	</div>
 
 	<script type="text/javascript" src="./js/jquery-1.11.1.min.js"></script>
