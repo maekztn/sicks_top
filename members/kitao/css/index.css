@@ -126,3 +126,62 @@ body{
 	top: 278px;
 	left: 214px;
 }
+
+@media screen and (max-width:768px){
+	body{
+		min-width: 100%;
+		min-height: 100%;
+
+	}
+	.wrapper{
+		width: 100%;
+		height: 100%;
+		overflow: hidden;
+	}
+	.wrapper .btns{
+		position: relative;
+		overflow: hidden;
+		
+	}
+	.wrapper .btns li{
+		width: 140px;
+	}
+	.wrapper .btns li img{
+		width: 100%;
+	}
+	.wrapper .btns li:nth-child(1){
+		top: calc(50% - 200px);
+		left: calc(50% - 70px);
+	}
+	.wrapper .btns li:nth-child(2){
+		top: calc(50% - 70px);
+		left: calc(50% + 40px);
+	}
+
+	.wrapper .btns li:nth-child(3){
+		top: calc(50% - 70px);
+		left: calc(50% - 180px);
+	}
+	.wrapper .btns li:nth-child(4){
+		bottom: calc(50% + 200px);
+		left: calc(50% - 70px);
+	}
+	.layer h2{
+		top: calc(50% - -200px);
+    	left: calc(50% - 200px);
+	}
+	.layer .img{
+		width: 90%;
+		top: calc(50% - 60px);
+		left: 0;
+	}
+	.layer .img img{
+		width: 100%;
+	}
+	.active{
+		opacity: 1;
+		top: calc(50% - 200px) !important;
+		left: calc(50% - 70px) !important;
+		z-index: 10 !important;
+	}
+}
