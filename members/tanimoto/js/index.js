@@ -120,7 +120,6 @@ $(function(){
 
   var sec = 0;
   var pass = 0;
-
   //▼スクロール値の表示
   $(window).scroll(function(){
     var scroll = $(this).scrollTop();

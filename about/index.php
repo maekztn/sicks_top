@@ -58,18 +58,8 @@
     <h2 class="ab-ttl">ABOUT</h2>
     <section class="ab-section">
         <h3 class="ab-section-ttl">このサイトについて</h3>
-        <div class="">
-          <ul class="images1 clearfix">
-            <li><img src="../images/kitao_about.png" alt="parson1" class="frame"/></li>
-            <li><img src="../images/seto_about.png" alt="parson2" class="frame"/></li>
-            <li><img src="../images/oosaki_about.png" alt="parson3" class="frame"/></li>
-          </ul>
-          <ul class="images2 clearfix">
-            <li><img src="../images/oomae_about.png" alt="parson4" class="frame"/></li>
-            <li><img src="../images/oomae_about.png" alt="parson5" class="frame"/></li>
-            <li><img src="../images/tanimoto_about.png" alt="parson6" class="frame"/></li>
-          </ul>
-        </div>
+        <p><img src="../images/about.png" alt="about" class="pc"/></p>
+        <p><img src="../images/about_sp.png" alt="about" class="sp"/></p>
         <p>京都コンピュータ学院で勉強している違う学科の生徒との交流を促進させるためのサイトです。<br />
 普段違う校舎で勉強していることもありお互い「何ができてどのようなものが作れるのか」知る機会が少ないと思います。<br />
 本サイトで自分を紹介することでプロジェクト演習でのマッチングや各校舎間、校舎内の交流を活発していくことが可能ではないかと考えています。</p>
